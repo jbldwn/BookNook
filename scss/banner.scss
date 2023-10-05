@@ -1,0 +1,41 @@
+.banner {
+    width: 90%;
+    height: 280px;
+    margin: 0 auto 50px;
+    background-color: $siteBlue;
+    position: relative;
+
+    &Style {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &Home {
+        background-image: linear-gradient(45deg, $siteBlueA, $siteBlueA), url(../images/home-hero.jpg);
+    }
+
+    &Words {
+        position: absolute;
+        top: 35%;
+        right: 15%;
+
+        display: flex;
+        // align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: $siteWhite;
+
+        span {
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+
+        .emph {
+            font-size: 16px;
+        }
+    }
+}

@@ -71,11 +71,13 @@ footer .socials .social {
   margin-left: 15px;
 }
 
-section.home .banner {
-  background-color: indianred;
-  height: 250px;
-  margin-bottom: 50px;
+section.home {
+  /* see banner.scss for page banner */
 }
+section.home .displayCase .displayCaseItem {
+  /* display featured books on homepage */
+}
+
 section.about .row {
   height: 350px;
   display: flex;
@@ -114,6 +116,40 @@ section.about .row div.right h6 {
   font-size: 26px;
 }
 section.about .row div.right p {
+  font-size: 16px;
+}
+
+.banner {
+  width: 90%;
+  height: 280px;
+  margin: 0 auto 50px;
+  background-color: rgb(88, 124, 131);
+  position: relative;
+}
+.bannerStyle {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bannerHome {
+  background-image: linear-gradient(45deg, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../images/home-hero.jpg);
+}
+.bannerWords {
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+.bannerWords span {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.bannerWords .emph {
   font-size: 16px;
 }
 
