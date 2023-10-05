@@ -1,19 +1,27 @@
 section.about {
 
     .row {
-        height: 315px;
+        height: 350px;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        border: red solid 1px;
 
         div {
             height: 100%;
-            background-color: lightcoral;
+
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+            flex-direction: column;
+            top: 0;
+
+
 
             &.photo {
-                width: 30%;
+                width: 24%;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -28,7 +36,21 @@ section.about {
             }
 
             &.right {
-                width: 65%;
+                width: 70%;
+
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 32px;
+                }
+
+                h6 {
+                    text-transform: capitalize;
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
             }
         }
     }

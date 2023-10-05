@@ -77,17 +77,21 @@ section.home .banner {
   margin-bottom: 50px;
 }
 section.about .row {
-  height: 315px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: red solid 1px;
 }
 section.about .row div {
   height: 100%;
-  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
 }
 section.about .row div.photo {
-  width: 30%;
+  width: 24%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +103,18 @@ section.about .row div.store {
   background-image: url(../images/about-photo-two.jpg);
 }
 section.about .row div.right {
-  width: 65%;
+  width: 70%;
+}
+section.about .row div.right h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+section.about .row div.right h6 {
+  text-transform: capitalize;
+  font-size: 26px;
+}
+section.about .row div.right p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
