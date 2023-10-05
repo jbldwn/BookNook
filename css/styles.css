@@ -26,15 +26,30 @@ nav {
 footer {
   height: 90px;
   background-color: rgb(88, 124, 131);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .links a {
+  color: #fff;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .socials .social {
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  margin-left: 15px;
 }
 
 section.home {
-  background-color: red;
   height: 100vh;
 }
 
 section.about {
-  background-color: blue;
   height: 100vh;
 }
 

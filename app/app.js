@@ -4,6 +4,7 @@ function route() {
     let hash = window.location.hash;
     let pageID = hash.replace("#", "")
 
+    /* (if pageID exists) ? (nothing) : (else pageID is home) */
     pageID ? pageID = pageID : pageID = "home";
 
     getContent(pageID);

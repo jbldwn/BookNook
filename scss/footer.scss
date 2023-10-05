@@ -1,4 +1,25 @@
 footer {
     height: 90px;
     background-color: rgb(88, 124, 131);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .links a {
+        color: #fff;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .social {
+            height: 45px;
+            width: 45px;
+            background-color: #fff;
+            margin-left: 15px;
+        }
+    }
 }
