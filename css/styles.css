@@ -19,8 +19,12 @@ p {
   margin-bottom: 16px;
 }
 
+.xtraB {
+  margin-bottom: 85px;
+}
+
 .margin {
-  width: 80vw;
+  width: 75vw;
   margin: 0 auto;
 }
 
@@ -72,8 +76,30 @@ section.home .banner {
   height: 250px;
   margin-bottom: 50px;
 }
-section.about {
-  height: 100vh;
+section.about .row {
+  height: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.about .row div {
+  height: 100%;
+  background-color: lightcoral;
+}
+section.about .row div.photo {
+  width: 30%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.about .row div.owner {
+  background-image: url(../images/about-photo.jpg);
+}
+section.about .row div.store {
+  background-image: url(../images/about-photo-two.jpg);
+}
+section.about .row div.right {
+  width: 65%;
 }
 
 /*# sourceMappingURL=styles.css.map */

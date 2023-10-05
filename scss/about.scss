@@ -1,3 +1,36 @@
 section.about {
-    height: 100vh;
+
+    .row {
+        height: 315px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        div {
+            height: 100%;
+            background-color: lightcoral;
+
+            &.photo {
+                width: 30%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            &.owner {
+                background-image: url(../images/about-photo.jpg);
+            }
+
+            &.store {
+                background-image: url(../images/about-photo-two.jpg);
+            }
+
+            &.right {
+                width: 65%;
+            }
+        }
+    }
+
 }
