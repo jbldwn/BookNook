@@ -37,6 +37,7 @@ p {
 }
 
 .displayCase {
+  background-color: lightsalmon;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,6 +45,7 @@ p {
 .displayCaseItem {
   min-height: 300px;
   width: 25%;
+  background-color: moccasin;
 }
 
 nav {
@@ -199,11 +201,11 @@ section.about .row div.right p {
 }
 .bannerWords span {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 24px;
   font-family: Seg_Bold;
 }
 .bannerWords .emph {
-  font-size: 16px;
+  font-size: 14px;
   font-family: Seg_Bold;
 }
 
