@@ -101,19 +101,20 @@ section.home .displayCase .displayCaseItem {
   /* display featured books on homepage */
 }
 
+section.about {
+  font-family: Seg_Bold;
+}
 section.about .row {
   height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: red solid 1px;
 }
 section.about .row div {
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  top: 0;
 }
 section.about .row div.photo {
   width: 24%;
