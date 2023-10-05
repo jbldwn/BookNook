@@ -3,6 +3,46 @@ section.home {
     /* see banner.scss for page banner */
 
     .displayCase .displayCaseItem {
+
         /* display featured books on homepage */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+
+        img,
+        .cover {
+            background-color: mediumpurple;
+            height: 300px;
+            width: 70%;
+            margin-bottom: 25px;
+        }
+
+        .itemInfo {
+            text-align: center;
+            font-family: Seg_Reg;
+            font-size: 14px;
+
+            .price {
+                font-family: Seg_Bold;
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+
+            .addBtn {
+                height: 50px;
+                width: 60%;
+                border: $siteBlack solid 1px;
+                margin: 0 auto;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+
+            }
+        }
+
     }
 }

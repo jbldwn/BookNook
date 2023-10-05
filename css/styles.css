@@ -37,15 +37,13 @@ p {
 }
 
 .displayCase {
-  background-color: lightsalmon;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .displayCaseItem {
-  height: 300px;
+  min-height: 300px;
   width: 25%;
-  background-color: moccasin;
 }
 
 nav {
@@ -99,6 +97,36 @@ section.home {
 }
 section.home .displayCase .displayCaseItem {
   /* display featured books on homepage */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+section.home .displayCase .displayCaseItem img,
+section.home .displayCase .displayCaseItem .cover {
+  background-color: mediumpurple;
+  height: 300px;
+  width: 70%;
+  margin-bottom: 25px;
+}
+section.home .displayCase .displayCaseItem .itemInfo {
+  text-align: center;
+  font-family: Seg_Reg;
+  font-size: 14px;
+}
+section.home .displayCase .displayCaseItem .itemInfo .price {
+  font-family: Seg_Bold;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+section.home .displayCase .displayCaseItem .itemInfo .addBtn {
+  height: 50px;
+  width: 60%;
+  border: rgb(0, 0, 0) solid 1px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 section.about {
@@ -146,7 +174,7 @@ section.about .row div.right p {
 .banner {
   width: 90%;
   height: 280px;
-  margin: 0 auto 50px;
+  margin: 0 auto 100px;
   background-color: rgb(88, 124, 131);
   position: relative;
 }
