@@ -19,11 +19,33 @@ p {
   margin-bottom: 16px;
 }
 
+.margin {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.displayCase {
+  background-color: lightsalmon;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.displayCaseItem {
+  height: 300px;
+  width: 25%;
+  background-color: moccasin;
+}
+
 nav {
+  margin-bottom: 75px;
+  /* keep this margin bottom to keep spacing even accross all pages */
   background-color: cornflowerblue;
+  height: 100px;
 }
 
 footer {
+  margin-top: 130px;
+  /* keep this margin top to keep spacing even accross all pages */
   height: 90px;
   background-color: rgb(88, 124, 131);
   display: flex;
@@ -45,10 +67,11 @@ footer .socials .social {
   margin-left: 15px;
 }
 
-section.home {
-  height: 100vh;
+section.home .banner {
+  background-color: indianred;
+  height: 250px;
+  margin-bottom: 50px;
 }
-
 section.about {
   height: 100vh;
 }

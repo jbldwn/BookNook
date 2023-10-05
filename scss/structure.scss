@@ -18,3 +18,23 @@ h6,
 p {
     margin-bottom: 16px;
 }
+
+.margin {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.displayCase {
+    background-color: lightsalmon;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &Item {
+        height: 300px;
+        width: 25%;
+        background-color: moccasin;
+    }
+}
