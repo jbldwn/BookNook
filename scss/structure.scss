@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: borderbox;
+    border: red solid 1px;
+
 }
 
 html,
@@ -24,21 +26,36 @@ p {
 }
 
 .margin {
-    width: 75vw;
+    width: 85vw;
     margin: 0 auto;
 }
 
 .displayCase {
-    background-color: lightsalmon;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-
     &Item {
-        height: 300px;
-        width: 25%;
-        background-color: moccasin;
+        .itemInfo {
+            font-family: Seg_Reg;
+            font-size: 12px;
+
+            .price {
+                font-family: Seg_Bold;
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+
+            .addBtn {
+                height: 50px;
+                width: 75%;
+                border: $siteBlack solid 1px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
     }
 }

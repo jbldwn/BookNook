@@ -1,8 +1,17 @@
+@font-face {
+  font-family: Seg_Bold;
+  src: url(/css/fonts/segoeuib.ttf);
+}
+@font-face {
+  font-family: Seg_Reg;
+  src: url(/css/fonts/segoeui.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: borderbox;
           box-sizing: borderbox;
+  border: red solid 1px;
 }
 
 html,
@@ -25,12 +34,11 @@ p {
 }
 
 .margin {
-  width: 75vw;
+  width: 85vw;
   margin: 0 auto;
 }
 
 .displayCase {
-  background-color: lightsalmon;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,10 +49,28 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.displayCaseItem {
-  height: 300px;
-  width: 25%;
-  background-color: moccasin;
+.displayCaseItem .itemInfo {
+  font-family: Seg_Reg;
+  font-size: 12px;
+}
+.displayCaseItem .itemInfo .price {
+  font-family: Seg_Bold;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.displayCaseItem .itemInfo .addBtn {
+  height: 50px;
+  width: 75%;
+  border: rgb(0, 0, 0) solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 nav {
@@ -106,9 +132,30 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-family: Seg_Reg;
+  color: rgb(255, 255, 255);
+}
+footer div {
+  width: 20%;
+}
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 footer .links a {
-  color: #fff;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+footer .links a:hover {
+  text-decoration: underline;
 }
 footer .socials {
   display: -webkit-box;
@@ -121,11 +168,8 @@ footer .socials {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-footer .socials .social {
-  height: 45px;
-  width: 45px;
-  background-color: #fff;
-  margin-left: 15px;
+footer .socials i {
+  color: rgb(255, 255, 255);
 }
 
 section.home {
@@ -133,10 +177,60 @@ section.home {
 }
 section.home .displayCase .displayCaseItem {
   /* display featured books on homepage */
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.home .displayCase .displayCaseItem img {
+  height: 300px;
+  margin-bottom: 25px;
+}
+section.home .displayCase .displayCaseItem .itemInfo {
+  text-align: center;
+}
+section.home .displayCase .displayCaseItem .itemInfo .addBtn {
+  margin: 0 auto;
 }
 
+/* ipad */
+@media screen and (max-width: 768px) {
+  section.home .displayCase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.home .displayCase .displayCaseItem {
+    width: 65%;
+  }
+  section.home .displayCase .displayCaseItem img {
+    height: 250px;
+  }
+  section.home .displayCase > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  section.home .displayCase .displayCaseItem img {
+    height: 150px;
+  }
+}
+section.about {
+  font-family: Seg_Bold;
+}
 section.about .row {
-  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,7 +240,6 @@ section.about .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: red solid 1px;
 }
 section.about .row div {
   height: 100%;
@@ -160,9 +253,9 @@ section.about .row div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 0;
 }
 section.about .row div.photo {
+  height: 350px;
   width: 24%;
   background-position: center;
   background-size: cover;
@@ -189,10 +282,102 @@ section.about .row div.right p {
   font-size: 16px;
 }
 
+/* ipad */
+@media screen and (max-width: 768px) {
+  section.about .row div.photo {
+    width: 45%;
+  }
+  section.about .row div.right {
+    width: 45%;
+  }
+  section.about .row div.right h1 {
+    font-size: 12px;
+  }
+  section.about .row div.right h6 {
+    font-size: 10px;
+  }
+  section.about .row div.right p {
+    font-size: 11px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  section.about .row div.photo {
+    height: 130px;
+    width: 75px;
+  }
+  section.about .row div.right {
+    width: 73%;
+  }
+  section.about .row div.right h1,
+  section.about .row div.right h6,
+  section.about .row div.right p {
+    font-size: 6px;
+  }
+}
+section.books .row {
+  padding-bottom: 50px;
+}
+section.books .row h1 {
+  margin-bottom: 25px;
+  font-family: Seg_Bold;
+}
+section.books .row .displayCase .displayCaseItem {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.books .row .displayCase .displayCaseItem img {
+  height: 250px;
+}
+section.books .row .displayCase .displayCaseItem img.bookset {
+  width: 165px;
+  height: 100%;
+}
+section.books .row .displayCase .displayCaseItem .itemInfo {
+  width: 48%;
+}
+section.books .row .displayCase .displayCaseItem .itemInfo p {
+  text-align: left;
+}
+
+section.books > *:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+/* ipad */
+@media screen and (max-width: 768px) {
+  section.books .row .displayCase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.books .row .displayCase .displayCaseItem {
+    width: 75%;
+  }
+  section.books .row .displayCase > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  section.books .row .displayCase .displayCaseItem img {
+    height: 150px;
+  }
+  section.books .row .displayCase .displayCaseItem img.bookset {
+    width: auto;
+    height: 115px;
+  }
+}
 .banner {
   width: 90%;
   height: 280px;
-  margin: 0 auto 50px;
+  margin: 0 auto 100px;
   background-color: rgb(88, 124, 131);
   position: relative;
 }
@@ -224,8 +409,54 @@ section.about .row div.right p {
 }
 .bannerWords span {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 24px;
+  font-family: Seg_Bold;
 }
 .bannerWords .emph {
-  font-size: 16px;
+  font-size: 14px;
+  font-family: Seg_Bold;
+}
+
+/* ipad */
+@media screen and (max-width: 768px) {
+  .bannerStyle {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    width: 45%;
+  }
+  .bannerHome {
+    background-image: url(../images/home-hero.jpg);
+  }
+  .bannerWords span {
+    font-size: 12px;
+  }
+  .bannerWords .emph {
+    font-size: 7px;
+    margin-top: 15px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  .bannerStyle {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    width: 45%;
+  }
+  .bannerHome {
+    background-image: url(../images/home-hero.jpg);
+  }
+  .bannerWords {
+    right: 10%;
+  }
+  .bannerWords span {
+    font-size: 12px;
+  }
+  .bannerWords .emph {
+    font-size: 7px;
+    margin-top: 15px;
+  }
 }
