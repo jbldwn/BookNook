@@ -26,14 +26,38 @@ section.home {
     }
 }
 
+/* ipad */
 @media screen and (max-width:768px) {
     section.home {
         .displayCase {
             flex-direction: column;
+
+            .displayCaseItem {
+                width: 65%;
+
+                img {
+                    height: 250px;
+                }
+            }
         }
 
         .displayCase>*:not(:last-child) {
             margin-bottom: 50px;
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width:400px) {
+    section.home {
+        .displayCase {
+            .displayCaseItem {
+                width: 65%;
+
+                img {
+                    height: 150px;
+                }
+            }
         }
     }
 }

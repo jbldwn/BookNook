@@ -125,12 +125,28 @@ section.home .displayCase .displayCaseItem .itemInfo .addBtn {
   margin: 0 auto;
 }
 
+/* ipad */
 @media screen and (max-width: 768px) {
   section.home .displayCase {
     flex-direction: column;
   }
+  section.home .displayCase .displayCaseItem {
+    width: 65%;
+  }
+  section.home .displayCase .displayCaseItem img {
+    height: 250px;
+  }
   section.home .displayCase > *:not(:last-child) {
     margin-bottom: 50px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  section.home .displayCase .displayCaseItem {
+    width: 65%;
+  }
+  section.home .displayCase .displayCaseItem img {
+    height: 150px;
   }
 }
 section.about {
@@ -241,6 +257,7 @@ section.books > *:not(:last-child) {
   font-family: Seg_Bold;
 }
 
+/* ipad */
 @media screen and (max-width: 768px) {
   .bannerStyle {
     position: absolute;
@@ -251,6 +268,29 @@ section.books > *:not(:last-child) {
   }
   .bannerHome {
     background-image: url(../images/home-hero.jpg);
+  }
+  .bannerWords span {
+    font-size: 12px;
+  }
+  .bannerWords .emph {
+    font-size: 7px;
+    margin-top: 15px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 400px) {
+  .bannerStyle {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    width: 45%;
+  }
+  .bannerHome {
+    background-image: url(../images/home-hero.jpg);
+  }
+  .bannerWords {
+    right: 10%;
   }
   .bannerWords span {
     font-size: 12px;

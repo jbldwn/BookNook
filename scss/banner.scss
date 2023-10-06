@@ -43,14 +43,13 @@
     }
 }
 
+/* ipad */
 @media screen and (max-width:768px) {
     .banner {
         &Style {
             position: absolute;
             top: 20%;
             left: 10%;
-            // align-content: center;
-            // align-self: center;
             height: 60%;
             width: 45%;
         }
@@ -60,6 +59,36 @@
         }
 
         &Words {
+            span {
+                font-size: 12px;
+            }
+
+            .emph {
+                font-size: 7px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width:400px) {
+    .banner {
+        &Style {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            height: 60%;
+            width: 45%;
+        }
+
+        &Home {
+            background-image: url(../images/home-hero.jpg);
+        }
+
+        &Words {
+            right: 10%;
+
             span {
                 font-size: 12px;
             }
