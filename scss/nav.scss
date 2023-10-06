@@ -1,18 +1,44 @@
 nav {
+  border-style: 5px solid black;
   height: 100px;
-  background-color: #bbbb;
 }
 .margin {
 }
 
-.logo {
+#book {
   height: 53px;
   width: 53px;
-  background-color: black;
 }
-.search {
+
+#profile-image {
+  height: 53px;
+  width: 53px;
 }
+
+#cart {
+  width: 54px;
+  height: 54px;
+}
+
+#search {
+  height: 44px;
+  width: 600px;
+  background-color: rgba(80, 124, 131, 0.3);
+  color: black;
+}
+
 .links {
   display: flex;
   justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+}
+
+#nav-header-text {
+  font-family: sans-serif;
 }
