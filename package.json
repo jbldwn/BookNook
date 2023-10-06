@@ -1,0 +1,26 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile:sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbldwn/BookNook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbldwn/BookNook/issues"
+  },
+  "homepage": "https://github.com/jbldwn/BookNook#readme",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
