@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: borderbox;
+  border: red solid 1px;
 }
 
 html,
@@ -113,10 +114,8 @@ section.home .displayCase .displayCaseItem {
   justify-content: space-evenly;
   flex-direction: column;
 }
-section.home .displayCase .displayCaseItem img,
-section.home .displayCase .displayCaseItem .cover {
+section.home .displayCase .displayCaseItem img {
   height: 300px;
-  width: 70%;
   margin-bottom: 25px;
 }
 section.home .displayCase .displayCaseItem .itemInfo {
@@ -126,6 +125,14 @@ section.home .displayCase .displayCaseItem .itemInfo .addBtn {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  section.home .displayCase {
+    flex-direction: column;
+  }
+  section.home .displayCase > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
 section.about {
   font-family: Seg_Bold;
 }
@@ -181,7 +188,7 @@ section.books .row .displayCase .displayCaseItem {
   justify-content: space-between;
 }
 section.books .row .displayCase .displayCaseItem img {
-  width: 45%;
+  height: 250px;
 }
 section.books .row .displayCase .displayCaseItem img.bookset {
   width: 165px;
@@ -232,6 +239,26 @@ section.books > *:not(:last-child) {
 .bannerWords .emph {
   font-size: 14px;
   font-family: Seg_Bold;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerStyle {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    width: 45%;
+  }
+  .bannerHome {
+    background-image: url(../images/home-hero.jpg);
+  }
+  .bannerWords span {
+    font-size: 12px;
+  }
+  .bannerWords .emph {
+    font-size: 7px;
+    margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
