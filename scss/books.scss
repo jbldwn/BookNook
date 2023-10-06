@@ -1,0 +1,43 @@
+section.books {
+    .row {
+        padding-bottom: 50px;
+
+        h1 {
+            margin-bottom: 25px;
+            font-family: Seg_Bold;
+        }
+
+        .displayCase .displayCaseItem {
+            width: 30%;
+
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+
+
+            img {
+                width: 45%;
+            }
+
+            img.bookset {
+                width: 165px;
+                height: 100%;
+            }
+
+            .itemInfo {
+                // margin-left: 10px;
+                width: 48%;
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}
+
+section.books>*:not(:last-child) {
+    // color: green;
+    margin-bottom: 50px;
+}

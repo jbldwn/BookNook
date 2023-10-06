@@ -32,20 +32,31 @@ p {
 }
 
 .margin {
-  width: 75vw;
+  width: 85vw;
   margin: 0 auto;
 }
 
 .displayCase {
-  background-color: lightsalmon;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.displayCaseItem {
-  min-height: 300px;
-  width: 25%;
-  background-color: moccasin;
+.displayCaseItem .itemInfo {
+  font-family: Seg_Reg;
+  font-size: 12px;
+}
+.displayCaseItem .itemInfo .price {
+  font-family: Seg_Bold;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.displayCaseItem .itemInfo .addBtn {
+  height: 50px;
+  width: 75%;
+  border: rgb(0, 0, 0) solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 nav {
@@ -99,6 +110,7 @@ section.home {
 }
 section.home .displayCase .displayCaseItem {
   /* display featured books on homepage */
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -113,22 +125,9 @@ section.home .displayCase .displayCaseItem .cover {
 }
 section.home .displayCase .displayCaseItem .itemInfo {
   text-align: center;
-  font-family: Seg_Reg;
-  font-size: 14px;
-}
-section.home .displayCase .displayCaseItem .itemInfo .price {
-  font-family: Seg_Bold;
-  font-size: 18px;
-  margin-bottom: 25px;
 }
 section.home .displayCase .displayCaseItem .itemInfo .addBtn {
-  height: 50px;
-  width: 60%;
-  border: rgb(0, 0, 0) solid 1px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 section.about {
@@ -171,6 +170,36 @@ section.about .row div.right h6 {
 }
 section.about .row div.right p {
   font-size: 16px;
+}
+
+section.books .row {
+  padding-bottom: 50px;
+}
+section.books .row h1 {
+  margin-bottom: 25px;
+  font-family: Seg_Bold;
+}
+section.books .row .displayCase .displayCaseItem {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+section.books .row .displayCase .displayCaseItem img {
+  width: 45%;
+}
+section.books .row .displayCase .displayCaseItem img.bookset {
+  width: 165px;
+  height: 100%;
+}
+section.books .row .displayCase .displayCaseItem .itemInfo {
+  width: 48%;
+}
+section.books .row .displayCase .displayCaseItem .itemInfo p {
+  text-align: left;
+}
+
+section.books > *:not(:last-child) {
+  margin-bottom: 50px;
 }
 
 .banner {
