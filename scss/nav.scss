@@ -1,9 +1,18 @@
 nav {
-  border-style: solid;
-  width: 100%;
   height: 100px;
+  background-color: #bbbb;
+}
+.margin {
+}
+
+.logo {
+  height: 53px;
+  width: 53px;
+  background-color: black;
+}
+.search {
+}
+.links {
   display: flex;
-  align-content: center;
-  align-items: center;
   justify-content: space-evenly;
 }
