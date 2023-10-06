@@ -2,12 +2,11 @@ section.about {
     font-family: Seg_Bold;
 
     .row {
-        height: 350px;
+        // height: 350px;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
-
 
         div {
             height: 100%;
@@ -16,10 +15,10 @@ section.about {
             align-items: center;
             flex-direction: column;
 
-
-
             &.photo {
+                height: 350px;
                 width: 24%;
+
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -49,6 +48,53 @@ section.about {
                 p {
                     font-size: 16px;
                 }
+            }
+        }
+    }
+}
+
+/* ipad */
+@media screen and (max-width:768px) {
+    section.about .row div {
+        &.photo {
+            width: 45%;
+        }
+
+        &.right {
+            width: 45%;
+
+            h1 {
+                font-size: 12px;
+            }
+
+            h6 {
+                font-size: 10px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width:400px) {
+    section.about .row div {
+        &.photo {
+            height: 130px;
+            width: 75px;
+        }
+
+        &.right {
+            width: 73%;
+
+            h1,
+
+            h6,
+
+            p {
+                font-size: 6px;
             }
         }
     }
