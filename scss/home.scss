@@ -49,15 +49,7 @@ section.home {
 
 /* mobile */
 @media screen and (max-width:400px) {
-    section.home {
-        .displayCase {
-            .displayCaseItem {
-                width: 65%;
-
-                img {
-                    height: 150px;
-                }
-            }
-        }
+    section.home .displayCase .displayCaseItem img {
+        height: 150px;
     }
 }

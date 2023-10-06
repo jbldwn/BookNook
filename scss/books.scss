@@ -39,3 +39,34 @@ section.books {
 section.books>*:not(:last-child) {
     margin-bottom: 50px;
 }
+
+/* ipad */
+@media screen and (max-width:768px) {
+    section.books .row {
+        .displayCase {
+            flex-direction: column;
+
+            .displayCaseItem {
+                width: 75%;
+            }
+        }
+
+        .displayCase>*:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width:400px) {
+    section.books .row .displayCase .displayCaseItem {
+        img {
+            height: 150px;
+        }
+
+        img.bookset {
+            width: auto;
+            height: 115px;
+        }
+    }
+}
