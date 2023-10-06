@@ -2,14 +2,14 @@ footer {
     margin-top: 130px;
     /* keep this margin top to keep spacing even accross all pages */
     height: 90px;
-    background-color: rgb(88, 124, 131);
+    background-color: $siteBlue;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
     font-family: Seg_Reg;
-    color: #fff;
+    color: $siteWhite;
 
     div {
         width: 20%;
@@ -21,7 +21,7 @@ footer {
         justify-content: space-between;
 
         a {
-            color: #fff;
+            color: $siteWhite;
             text-decoration: none;
             text-transform: capitalize;
         }
@@ -36,11 +36,9 @@ footer {
         align-items: center;
         justify-content: space-evenly;
 
-        .social {
-            height: 45px;
-            width: 45px;
-            background-color: #fff;
-            margin-left: 15px;
+
+        i {
+            color: $siteWhite;
         }
     }
 }

@@ -75,7 +75,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   font-family: Seg_Reg;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 footer div {
   width: 20%;
@@ -86,7 +86,7 @@ footer .links {
   justify-content: space-between;
 }
 footer .links a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -98,11 +98,8 @@ footer .socials {
   align-items: center;
   justify-content: space-evenly;
 }
-footer .socials .social {
-  height: 45px;
-  width: 45px;
-  background-color: #fff;
-  margin-left: 15px;
+footer .socials i {
+  color: rgb(255, 255, 255);
 }
 
 section.home {
@@ -118,7 +115,6 @@ section.home .displayCase .displayCaseItem {
 }
 section.home .displayCase .displayCaseItem img,
 section.home .displayCase .displayCaseItem .cover {
-  background-color: mediumpurple;
   height: 300px;
   width: 70%;
   margin-bottom: 25px;

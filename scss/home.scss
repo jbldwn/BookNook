@@ -11,15 +11,12 @@ section.home {
         justify-content: space-evenly;
         flex-direction: column;
 
-
         img,
         .cover {
-            background-color: mediumpurple;
             height: 300px;
             width: 70%;
             margin-bottom: 25px;
         }
-
 
         .itemInfo {
             text-align: center;
