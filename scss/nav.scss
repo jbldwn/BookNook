@@ -7,31 +7,3 @@ nav {
   align-items: center;
   justify-content: space-evenly;
 }
-
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-#logo {
-  background-image: url("../images/books-stack-of-three.png");
-  width: 73px;
-  height: 73px;
-}
-
-#user {
-  width: 47px;
-  height: 47px;
-}
-
-#cart {
-  width: 52px;
-  height: 52px;
-}
-
-#search {
-  height: 44px;
-  width: 600px;
-  background-color: rgba(80, 124, 131, 0.3);
-  color: black;
-}
