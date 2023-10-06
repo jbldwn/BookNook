@@ -74,14 +74,30 @@ p {
 }
 
 nav {
+  border-style: 5px solid black;
   height: 100px;
-  background-color: rgba(187, 187, 187, 0.7333333333);
 }
 
-.logo {
-  height: 53px;
-  width: 53px;
-  background-color: black;
+#book {
+  height: 72px;
+  width: 72px;
+}
+
+#profile-image {
+  height: 47px;
+  width: 47px;
+}
+
+#cart {
+  width: 52px;
+  height: 52px;
+}
+
+#search {
+  height: 44px;
+  width: 600px;
+  background-color: rgba(80, 124, 131, 0.3);
+  color: black;
 }
 
 .links {
@@ -91,6 +107,16 @@ nav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#nav-header-text {
+  font-family: sans-serif;
 }
 
 footer {
