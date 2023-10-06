@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: borderbox;
+  -webkit-box-sizing: borderbox;
+          box-sizing: borderbox;
 }
 
 html,
@@ -30,9 +31,15 @@ p {
 
 .displayCase {
   background-color: lightsalmon;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .displayCaseItem {
   height: 300px;
@@ -41,10 +48,48 @@ p {
 }
 
 nav {
-  margin-bottom: 75px;
-  /* keep this margin bottom to keep spacing even accross all pages */
-  background-color: cornflowerblue;
+  border-style: solid;
+  width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  background-image: url("../images/books-stack-of-three.png");
+  width: 73px;
+  height: 73px;
+}
+
+#user {
+  width: 47px;
+  height: 47px;
+}
+
+#cart {
+  width: 52px;
+  height: 52px;
+}
+
+#search {
+  height: 44px;
+  width: 600px;
+  background-color: rgba(80, 124, 131, 0.3);
+  color: black;
 }
 
 footer {
@@ -52,17 +97,29 @@ footer {
   /* keep this margin top to keep spacing even accross all pages */
   height: 90px;
   background-color: rgb(88, 124, 131);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 footer .links a {
   color: #fff;
 }
 footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 footer .socials .social {
   height: 45px;
@@ -80,16 +137,29 @@ section.home .displayCase .displayCaseItem {
 
 section.about .row {
   height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: red solid 1px;
 }
 section.about .row div {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
 }
 section.about .row div.photo {
@@ -140,9 +210,16 @@ section.about .row div.right p {
   position: absolute;
   top: 35%;
   right: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: rgb(255, 255, 255);
 }
 .bannerWords span {
@@ -152,5 +229,3 @@ section.about .row div.right p {
 .bannerWords .emph {
   font-size: 16px;
 }
-
-/*# sourceMappingURL=styles.css.map */
