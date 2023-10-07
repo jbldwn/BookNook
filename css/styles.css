@@ -425,11 +425,23 @@ section.books > *:not(:last-child) {
   margin-top: -15px;
   font-weight: normal;
 }
+.cart .content h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding-left: 22px;
+  margin-top: 40px;
+  font-weight: normal;
+}
+.cart .line {
+  border-bottom: solid black;
+  width: 1920px;
+  margin-top: 97px;
+}
 .cart .mlk {
   width: 600px;
   height: 317px;
   margin-left: 50px;
-  margin-top: 196px;
+  margin-top: 96px;
   display: flex;
 }
 .cart .mlk .img {
@@ -457,6 +469,13 @@ section.books > *:not(:last-child) {
   font-size: 16px;
   padding-left: 22px;
   margin-top: -15px;
+  font-weight: normal;
+}
+.cart .mlk h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding-left: 22px;
+  margin-top: 40px;
   font-weight: normal;
 }
 
