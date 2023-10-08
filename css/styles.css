@@ -6,13 +6,6 @@
   font-family: Seg_Reg;
   src: url(/css/fonts/segoeui.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: borderbox;
-  border: red solid 1px;
-}
-
 html,
 body {
   height: 100%;
@@ -436,6 +429,7 @@ section.books > *:not(:last-child) {
   border-bottom: solid black;
   width: 1920px;
   margin-top: 97px;
+  margin-left: -150px;
 }
 .cart .mlk {
   width: 600px;
@@ -477,6 +471,36 @@ section.books > *:not(:last-child) {
   padding-left: 22px;
   margin-top: 40px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    height: auto;
+    width: auto;
+  }
+  .mlk {
+    height: auto;
+    width: auto;
+  }
+}
+.bookclub {
+  margin-top: 172px;
+  height: 1888px;
+  margin-top: 172px;
+}
+.bookclub .hero {
+  width: 1464px;
+  height: 463px;
+  margin: 0 auto;
+}
+.bookclub .hero img {
+  height: 100%;
+  width: 100%;
+}
+.bookclub .stuff {
+  display: flex;
+  width: 1552px;
+  height: 700px;
 }
 
 /*# sourceMappingURL=styles.css.map */

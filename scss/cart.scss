@@ -51,6 +51,7 @@
         border-bottom: solid black;
         width: 1920px;
         margin-top: 97px;
+        margin-left: -150px;
     }
 
     .mlk{
@@ -99,4 +100,18 @@
         }
     }
 
+}
+
+// ipad
+@media screen and (max-width: 768px) {
+
+    .content{
+        height: auto;
+        width: auto;
+    }
+    
+    .mlk{
+        height: auto;
+        width: auto;
+    }
 }
